@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GameWave</title>
+</head>
+
+<body>
+    <hr class="border-cl-primary mt-0">
+    <nav class="navbar-light fixed-bottom border-top-primary menu-shadow top-radius bg-light">
+        <div class="m-auto">
+            <ul class="d-flex justify-content-around p-0 m-auto no-list">
+                <li class="nav-item"><a class="nav-link" onclick="Carrito()"><img src="./imagenes/trolley.png" alt="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" ><img src="./imagenes/home.png" alt="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModal"><img src="./imagenes/user.png" alt="icon"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center mb-5">
+        <h1 class="font-barlow-500">PRODUCTOS</h1>
+        <div class="row">
+            <main id="items" class="col-12 row m-auto justify-content-center">
+            </main>
+        </div>
+    </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header mb-0">
+          <h5 class="modal-title" id="exampleModalLabel">USUARIO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex row justify-content-center p-3">
+
+          <img class="img-fluid pb-3" src="./imagenes/yo.jpg">
+          <ul class="list-group w-75">
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Carrera:</span> Diseño y desarrollo Web</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Materia:</span> Interaccion con dispositivos moviles</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Comision:</span> 2A</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Año:</span> 2021</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">2do</span> Cuatrimestre</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Docente:</span> Omar Toyos</li>
+              <li class="list-group-item p-1"><span class="color-primary font-barlow-500">Alumno:</span> Nehuen Amaro</li>
+              <li class="list-group-item p-1 text-center"><span class="color-primary font-barlow-600"> Entrega Final </span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>
